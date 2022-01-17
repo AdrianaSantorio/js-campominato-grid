@@ -9,7 +9,7 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
 /*
 -richiedere la difficoltà all' utente
--collegare la difficoltà al numero delle celle
+-2collegare la difficoltà al numero delle celle
 -generare una griglia del numero di celle stabilito
 
 */
@@ -18,3 +18,20 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
 //COSTANTI
 
+const button = document.getElementById('play');
+let totalCellNumber = '';
+const difficulty = parseInt(document.getElementById('difficulty').value);
+console.log(difficulty);
+
+
+button.addEventListener('click', function() {
+    //2
+    if (difficulty === 1) {
+        totalCellNumber = 100;
+    } else if (difficulty ===2) {
+        totalCellNumber = 81;
+    } else {
+        totalCellNumber= 49;
+    }
+
+})

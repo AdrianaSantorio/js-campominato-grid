@@ -1,0 +1,52 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between ;
+}
+
+
+main {
+    background-color: darkblue;
+    text-align: center;
+}
+
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    
+}
+
+#grid {
+    width: 800px;
+    height: 800px;
+    margin: 50px auto;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid .cell {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.cell-100 {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.cell-81 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.cell-49 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
