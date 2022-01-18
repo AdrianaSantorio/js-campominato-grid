@@ -32,6 +32,7 @@ let totalCellNumber = '';
 let cellClass = '';
 
 button.addEventListener('click', function() {
+    grid.innerHTML='';
     const difficulty = parseInt(document.getElementById('difficulty').value);
     console.log(difficulty);
     //2
