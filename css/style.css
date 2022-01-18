@@ -6,26 +6,27 @@ box-sizing: border-box;
 
 header {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-around ;
+    align-items: center;
+    height: 80px;
 }
-
 
 main {
     background-color: darkblue;
     text-align: center;
+    padding: 50px;
 }
 
 
 button {
-    margin-top: 30px;
+    margin: 0 auto 30px;
     padding: 10px 20px;
-    
 }
 
 #grid {
     width: 800px;
     height: 800px;
-    margin: 50px auto;
+    margin: 0 auto;
     border: 2px solid white;
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +34,7 @@ button {
 
 #grid .cell {
     border: 1px solid white;
-    cursor: pointer;
+    cursor: pointer;   
 }
 
 .cell-100 {
@@ -49,4 +50,9 @@ button {
 .cell-49 {
     width: calc(100% / 7);
     height: calc(100% / 7);
+}
+
+
+.clicked {
+    background-color: dodgerblue;
 }
